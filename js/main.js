@@ -16,9 +16,9 @@ function tryN() {
   console.log("Prueba con " + textN)
   if (textN < 100 && textN > 1){
     if (textN < randomN){
-      hint.innerHTML = "El número es mayor que " + textN;
+      hint.innerHTML = "Demasiado bajo";
     } else if (textN > randomN){
-      hint.innerHTML = "El número es menor que " + textN;
+      hint.innerHTML = "Demasiado alto";
     }else {
       hint.innerHTML = "¡Has ganado campeona!";
     }
