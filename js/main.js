@@ -8,6 +8,7 @@ console.log("El número aleatorio es " + randomN);
 const text = document.querySelector(".text");
 const hint = document.querySelector(".hint");
 const attempt = document.querySelector(".attempt");
+let attemptN = parseInt(attempt.innerHTML);
 const btn = document.querySelector(".btn");
 
 function tryN() {
@@ -24,6 +25,7 @@ function tryN() {
   }else {
     hint.innerHTML = "El número ebe estar comprendido entre 1 y 100";
   }
+  attempt.innerHTML = ++attemptN;
 }
 
 btn.addEventListener("click", tryN);
