@@ -9,3 +9,10 @@ const text = document.querySelector(".text");
 const hint = document.querySelector(".hint");
 const attempt = document.querySelector(".attempt");
 const btn = document.querySelector(".btn");
+
+function tryN() {
+  const textN = text.value;
+  console.log("Prueba con " + textN)
+}
+
+btn.addEventListener("click", tryN);
