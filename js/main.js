@@ -13,6 +13,13 @@ const btn = document.querySelector(".btn");
 function tryN() {
   const textN = text.value;
   console.log("Prueba con " + textN)
+  if (textN < randomN){
+    hint.innerHTML = "El número es mayor que " + textN;
+  } else if (textN > randomN){
+    hint.innerHTML = "El número es menor que " + textN;
+  }else {
+    hint.innerHTML = "¡Has ganado campeona!";
+  }
 }
 
 btn.addEventListener("click", tryN);
