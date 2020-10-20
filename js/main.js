@@ -14,7 +14,8 @@ let attemptN = parseInt(attempt.innerHTML);
 const btn = document.querySelector(".btn");
 
 function tryN() {
-	const textN = text.value;
+	const textNu = text.value;
+	const textN = parceInt(textNu);
 	console.log("Prueba con " + textN);
 	if (textN <= 100 && textN >= 1) {
 		if (textN < randomN) {
