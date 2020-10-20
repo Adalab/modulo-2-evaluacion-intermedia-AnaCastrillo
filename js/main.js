@@ -16,7 +16,7 @@ const btn = document.querySelector(".btn");
 function tryN() {
 	const textN = text.value;
 	console.log("Prueba con " + textN);
-	if (textN < 100 && textN > 1) {
+	if (textN <= 100 && textN >= 1) {
 		if (textN < randomN) {
 			hint.innerHTML = "Demasiado bajo";
 		} else if (textN > randomN) {
