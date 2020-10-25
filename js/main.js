@@ -18,17 +18,20 @@ function tryN() {
 	console.log("Prueba con " + textN);
 	if (textN <= 100 && textN >= 1) {
 		if (textN < randomN) {
-			hint.innerHTML = "Demasiado bajo";
+			writeHint('Demasiado bajo');
 		} else if (textN > randomN) {
-			hint.innerHTML = "Demasiado alto";
+			writeHint('Demasiado alto');
 		} else {
-			hint.innerHTML = "¡Has ganado campeona!";
+			writeHint('¡Has ganado campeona!');
 		}
 	} else {
-		hint.innerHTML = "El número debe estar comprendido entre 1 y 100";
+		writeHint('El número debe estar comprendido entre 1 y 100') ;
 	}
 	attempt.innerHTML = ++attemptN;
 }
+
+function writeHint(clue){
+	hint.innerHTML = clue;
 
 btn.addEventListener("click", tryN);
 
