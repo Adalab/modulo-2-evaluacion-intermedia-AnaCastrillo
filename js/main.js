@@ -14,8 +14,7 @@ let attemptN = parseInt(attempt.innerHTML);
 const btn = document.querySelector(".btn");
 
 function tryN() {
-	const textNu = text.value;
-	const textN = parceInt(textNu);
+	const textN = parceInt(text.value);
 	console.log("Prueba con " + textN);
 	if (textN <= 100 && textN >= 1) {
 		if (textN < randomN) {
@@ -26,7 +25,7 @@ function tryN() {
 			hint.innerHTML = "¡Has ganado campeona!";
 		}
 	} else {
-		hint.innerHTML = "El número ebe estar comprendido entre 1 y 100";
+		hint.innerHTML = "El número debe estar comprendido entre 1 y 100";
 	}
 	attempt.innerHTML = ++attemptN;
 }
