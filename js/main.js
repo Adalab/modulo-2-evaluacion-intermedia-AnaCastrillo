@@ -10,8 +10,9 @@ console.log("El número aleatorio es " + randomN);
 const text = document.querySelector(".text");
 const hint = document.querySelector(".hint");
 const attempt = document.querySelector(".attempt");
-let attemptN = parseInt(attempt.innerHTML);
 const btn = document.querySelector(".btn");
+const form = document.querySelector(".js-form");
+let attemptN = parseInt(attempt.innerHTML);
 
 function tryN() {
 	const textN = parseInt(text.value);
@@ -34,8 +35,6 @@ function writeHint(clue){
 	hint.innerHTML = clue;
 
 btn.addEventListener("click", tryN);
-
-const form = document.querySelector(".js-form");
 
 function handleForm(ev) {
 	ev.preventDefault();
