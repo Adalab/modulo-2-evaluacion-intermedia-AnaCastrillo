@@ -28,6 +28,11 @@ function tryN() {
 	} else {
 		writeHint('El número debe estar comprendido entre 1 y 100') ;
 	}
+	attemptCounter();
+	
+}
+
+function attemptCounter() {
 	attempt.innerHTML = ++attemptN;
 }
 
