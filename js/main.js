@@ -45,4 +45,4 @@ function handleForm(ev) {
 	ev.preventDefault();
 }
 
-form.addEventListener("submit", handleForm);
+form.addEventListener("submit", handleForm)
